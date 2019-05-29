@@ -43,6 +43,7 @@ function getCommits(el) {
 
 function displayCommits() {
   const commits = JSON.parse(this.responseText);
+  debugger;
   const commitsList = `<ul>${commits
     .map(
       commit =>
@@ -66,6 +67,7 @@ function getBranches(el) {
   xhr.open('GET', 'https://api.github.com/repos/' + el.dataset.username + '/' + repoName + '/branches');
   xhr.send();
 }
+
 function displayBranches() {
   const branches = JSON.parse(this.responseText);
   const branchesList = `<ul>${branches
