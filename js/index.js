@@ -49,8 +49,8 @@ function displayCommits() {
       commit =>
         '<li><h3>' +
         commit.commit.author.name +
-        ' (' +
-        commit.author.login +
+        ' ('
+        // + commit.author.login +
         ')</h3>' +
         commit.commit.message +
         '</li>'
