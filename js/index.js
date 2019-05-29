@@ -50,7 +50,7 @@ function displayCommits() {
         '<li><h3>' +
         commit.commit.author.name +
         ' ('
-        + commit.author.html_url +
+        + commit.author +
         ')</h3>' +
         commit.commit.message +
         '</li>'
